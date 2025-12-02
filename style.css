@@ -1,89 +1,83 @@
+/* Global styling */
 body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 950px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
 }
 
 header {
-  background: #1f2937;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-header h1 {
-  margin: 10px 0 0 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
-
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #10b981;
-}
-
-section {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    color: #222;
 }
 
 h2 {
-  color: #111827;
-  border-bottom: 2px solid #1f2937;
-  display: inline-block;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #555;
+}
+
+.contact p {
+    margin: 4px 0;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-left: 4px solid #4b7bec;
+    padding-left: 10px;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+    margin: 10px 0 10px 20px;
 }
 
-li {
-  margin-bottom: 10px;
+.job {
+    margin-bottom: 20px;
 }
 
-.skills li::before {
-  content: "✓ ";
-  color: #10b981;
+.job h4 {
+    font-size: 18px;
+    color: #222;
+    margin-bottom: 5px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #1f2937;
-  color: #fff;
-  margin-top: 40px;
+.job span {
+    float: right;
+    font-size: 14px;
+    color: #777;
+}
+
+p, li {
+    line-height: 1.6;
 }
 
 a {
-  color: #3b82f6;
-  text-decoration: none;
+    color: #4b7bec;
+    text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  .profile-img {
-    width: 120px;
-    height: 120px;
-  }
+a:hover {
+    text-decoration: underline;
 }
